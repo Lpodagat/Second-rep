@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite1" parallel="tests">
+  <test name="Test1">
+  <parameter name = "username" value="username1" />
+   <parameter name= "Password" value="password1"/>
+   <classes>
+       <class name="TryMaven.TestMaven" />
+    </classes>
+  </test>
+  <test name="Test2">
+  <parameter name = "username" value="username2" />
+   <parameter name= "Password" value="password2"/>
+  <classes>
+       <class name="TryMaven.TestMaven" />
+    </classes>
+  </test>
+  </suite> 
+ <!-- Suite1 -->
+

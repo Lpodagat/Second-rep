@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="username" value="username2"/>
+  <parameter name="Password" value="password2"/>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="username" value="username1"/>
+    <parameter name="Password" value="password1"/>
+    <classes>
+      <class name="TryMaven.TestMaven">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TryMaven.TestMaven -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="username" value="username2"/>
+    <parameter name="Password" value="password2"/>
+    <classes>
+      <class name="TryMaven.TestMaven">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TryMaven.TestMaven -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

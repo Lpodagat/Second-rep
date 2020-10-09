@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TryMaven.TestMaven
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.148 sec <<< FAILURE! - in TryMaven.TestMaven
+login(TryMaven.TestMaven)  Time elapsed: 0.736 sec  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'username' is required by @Test on method login but has not been marked @Optional or defined
+
+
